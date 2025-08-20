@@ -371,6 +371,7 @@ const handleImageClick = (e) => {
       alt="Suicune"
       className="w-26 h-26 object-contain"
     />
+    
     <div className="absolute inset-0 rounded-full hover:bg-white/10 transition-colors" />
   </div>
 
@@ -619,16 +620,16 @@ const handleImageClick = (e) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="absolute top-safe-4 left-[360px] z-40 pointer-events-none"
+      className="absolute top-safe-4 left-[400px] z-40 pointer-events-none"
     >
       <div 
-        className="flex items-center gap-4 bg-black/50 backdrop-blur-md rounded-xl p-4"
+        className="flex items-center gap-2 bg-black/50 backdrop-blur-md rounded-lg px-4 py-2" // Increased padding
         style={{ 
-          border: '2px solid rgba(255, 255, 255, 0.5)',
+          border: '1px solid rgba(255, 255, 255, 0.5)',
         }}
       >
         <h1 
-          className="text-6xl font-black italic tracking-wider"
+          className="text-3xl font-black italic tracking-wider" // Increased from text-xl to text-3xl
           style={{ 
             fontFamily: 'Arial Black, Arial, sans-serif',
             color: 'white',
@@ -637,12 +638,11 @@ const handleImageClick = (e) => {
                2px -2px 0 #000,
               -2px  2px 0 #000,
                2px  2px 0 #000,
-               4px  4px 0 rgba(0,0,0,0.5)
-            `
+               3px  3px 0 rgba(0,0,0,0.5)
+            ` // Increased shadow size to match larger text
           }}
         >
-          {remainingChases} Chases / {bagCount - selectedNumbers.size} 
-          
+          {bagCount - selectedNumbers.size} Bags / Hit Ratio: {calculateHitRatio()}
         </h1>
       </div>
     </motion.div>
