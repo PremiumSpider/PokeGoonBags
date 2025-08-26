@@ -360,14 +360,14 @@ const handleImageClick = (e) => {
   </button>
 
   <img 
-    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/9.gif"
+    src="/9.gif"
     alt="Blastoise"
     className="w-20 h-20 object-contain"
   />
 
   <div className="relative cursor-pointer" onClick={() => setIsEditMode(!isEditMode)}>
     <img 
-      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/245.gif"
+      src="/245.gif"
       alt="Suicune"
       className="w-26 h-26 object-contain"
     />
@@ -376,7 +376,7 @@ const handleImageClick = (e) => {
   </div>
 
   <img 
-    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/9.gif"
+    src="/9.gif"
     alt="Blastoise"
     className="w-20 h-20 object-contain"
   />
